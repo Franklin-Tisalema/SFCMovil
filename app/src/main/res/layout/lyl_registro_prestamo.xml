@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:padding="5dp"
+    android:scrollIndicators="left|right"
+    android:showDividers="beginning|middle|end"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Pagare:"
+            android:id="@+id/lblTPagare"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:padding="0dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Prestamo:"
+            android:id="@+id/lblTTipoPrestamo"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Monto:"
+            android:id="@+id/lblTMonto"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:padding="0dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Estado:"
+            android:id="@+id/lblTEstado"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:padding="0dp"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Pagare"
+            android:id="@+id/lblPagare"
+            android:textColor="#60020f"
+            android:textStyle="bold|italic"
+            android:padding="0dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Prestamo"
+            android:id="@+id/lblTipoPrestamo"
+            android:textColor="#60020f"
+            android:textStyle="bold|italic"
+            android:padding="0dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Monto"
+            android:id="@+id/lblMonto"
+            android:textColor="#60020f"
+            android:textStyle="bold|italic"
+            android:padding="0dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Estado"
+            android:id="@+id/lblEstado"
+            android:textColor="#60020f"
+            android:textStyle="bold|italic"
+            android:padding="0dp"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

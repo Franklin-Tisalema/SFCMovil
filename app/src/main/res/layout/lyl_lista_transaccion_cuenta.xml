@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:showDividers="middle"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblTFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Fecha:"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblTDocumento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Documento:"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblTValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Valor:"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblTSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Saldo:"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblTUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Usuario:"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblTOficina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Oficina:"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblTTipoTransaccion"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Transacción:"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Fecha"
+            android:textColor="#60020f"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblDocumento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Documento"
+            android:textColor="#60020f"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Valor"
+            android:textColor="#60020f"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Saldo"
+            android:textColor="#60020f"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Usuario"
+            android:textColor="#60020f"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblOficina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Oficina"
+            android:textColor="#60020f"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblTipoTransaccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:paddingRight="2dp"
+            android:text="Transaccion"
+            android:textColor="#60020f"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+</LinearLayout>

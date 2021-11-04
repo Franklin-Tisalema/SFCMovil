@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">SFCMovil</string>
+    <string name="action_borrar_datos">Borrar Datos</string>
+    <string name="action_acerca">Acerca de...</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_consulta_prestamo">Consulta Préstamos</string>
+    <string name="title_activity_pago_prestamo">Pago Préstamo</string>
+    <string name="tamano_texto_pago">12dp</string>
+    <string name="title_activity_registro_numero_telefono">Registro Número Teléfono</string>
+    <string name="title_activity_distribuidor">SFC Movil</string>
+    <string name="title_activity_consulta_pagos">Consulta Cobros</string>
+    <string name="title_activity_consulta_totales_pagos">Consulta Totales Cobros</string>
+    <string name="title_activity_consulta_clientes">Consulta Clientes</string>
+    <string name="title_activity_consulta_cotizadorDPF">Cotizador DPF</string>
+    <string name="title_fingerprint">Acceso a SFCMovil</string>
+    <string name="desc_fingerprint">Coloque el dedo en el escáner para verificar su identidad</string>
+    <string name="note">(El inicio de sesión con la huella dactilar hace que la aplicación inicie sesión mucho más rápido. Su dispositivo debe tener al menos una huella digital registrada en la configuración del dispositivo)</string>
+    <string name="title_activity_home">Huella dactilar</string>
+    <string name="activity_home_desc">Ha iniciado sesión con éxito con la autenticación de huellas dactilares</string>
+    <string name="activity_home_note">Cierre y vuelva a abrir la aplicación para volver a ver la pantalla de autenticación de huellas dactilares</string>
+</resources>

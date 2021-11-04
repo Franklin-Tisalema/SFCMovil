@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e62020</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#a0b60600</color>
+    <color name="colorEtiquetaTitulo">#e00b41f4</color>
+    <color name="textPrimary">#f5f5f5</color>
+    <color name="textPrimaryDark">#95aab4</color>
+    <color name="errorText">#FF5722</color>
+    <color name="avisoText">#0088FF</color>
+    <color name="huellaText">#e62020</color>
+    <color name="successText">#55E620</color>
+</resources>

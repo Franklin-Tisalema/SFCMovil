@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollIndicators="right|end"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.chibuleo.sfcmovil.PagoPrestamo"
+    tools:showIn="@layout/activity_pago_prestamo">
+
+    <TextView
+        android:id="@+id/lblTituloUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="155dp"
+        android:layout_y="5dp"
+        android:text="Usuario:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="210dp"
+        android:layout_y="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorEtiquetaTitulo"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="210dp"
+        android:layout_y="25dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorEtiquetaTitulo"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblTituloFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="155dp"
+        android:layout_y="25dp"
+        android:text="Fecha:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/primerdivisor"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_x="0dp"
+        android:layout_y="45dp"
+        android:background="#000000" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:src="@mipmap/logoch" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_x="0dp"
+        android:layout_y="50dp">
+
+    <AbsoluteLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:padding="5dp"
+        android:layout_x="0dp"
+        android:layout_y="50dp"
+        android:scrollIndicators="bottom|right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="0dp"
+            android:layout_y="0dp"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lblNombreCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblPagare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pagare:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblPrestamo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prestamo:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblEstado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblMonto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monto:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblSaldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saldo:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblSaldoAtrasado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S. Atrasado:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblCuota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="V. Cuota:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblInteres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="V. Interes:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblMora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="V. Mora:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblOtros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="V. Otros:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblValorProximoPago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="V. Prox. Pago:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblFechaProximoPago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F. Prox. Pago:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblLiquidar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Para Liquidar:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblAlDia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Al Dia:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/txtNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Nombre:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPagare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Pagare:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPrestamo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Prestamo"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtEstado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Estado:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtMonto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Monto:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtSaldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Saldo:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtSaldoAtrasado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Saldo Atrasado:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtValorCuota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="V. Cuota:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtValorInteres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="V. Interes:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtValorMora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="V. Mora:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtValorOtros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="V. Otros:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtValorProximoPago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="V. Prox. Pago"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtFechaProximoPago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="F. Prox. Pago:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtLiquidar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Liquidar:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAlDia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Al Dia:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#60020f"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAbonar"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_x="0dp"
+            android:layout_y="305dp"
+            android:background="@drawable/borde_fondo_azul"
+            android:text="REALIZAR PAGO"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="10dp"
+            android:layout_y="275dp"
+            android:text="Efectivo:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtEfectivo"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_x="102dp"
+            android:layout_y="267dp"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Ej: 100.25"
+            android:inputType="numberDecimal"
+            android:maxLength="7"
+            android:textAlignment="gravity"
+            android:textColor="#060d67"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblTotalAPagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="5dp"
+            android:layout_y="230dp"
+            android:paddingTop="15dp"
+            android:text="TOTAL A PAGAR:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fe0303"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTotalAPagar"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_x="150dp"
+            android:layout_y="230dp"
+            android:paddingTop="15dp"
+            android:text="TOTAL A PAGAR:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnImprimirRecibo"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_x="0dp"
+            android:layout_y="350dp"
+            android:background="@drawable/borde_fondo_naranja"
+            android:text="IMPRIMIR RECIBO"
+            android:textStyle="bold" />
+    </AbsoluteLayout>
+    </ScrollView>
+</AbsoluteLayout>
